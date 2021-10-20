@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function fn() {
+        // alert("hi");
+        // console.log("hello");
+        const access = ["emp1", "emp2", "emp3"];
+        a = document.getElementById("name").value;
+        b = document.getElementById("password").value;
+        if (a == "" && b == "") {
+          alert("please enter the value");
+        } else {
+          for (i = 0; i < access.length; i++) {
+            if (access[i] == a) {
+              alert("have aceess");
+              break;
+            } else {
+              alert("not have aceess");
+              break;
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <input type="email" id="name" />
+    <input type="password" name="" id="password" />
+    <button onclick="fn()">click me</button>
+  </body>
+</html>
